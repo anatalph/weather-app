@@ -36,7 +36,7 @@ const DayStats = ({ day }) => {
       </div>
 
       <div className="next-5-days__icon">
-        <img src={icon || `${URL}01d@2x.png`} alt={alt} />
+        <img src={icon == undefined ? `${URL}01d@2x.png` : icon} alt={alt} />
       </div>
 
       <div className="next-5-days__rain">

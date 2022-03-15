@@ -23,7 +23,7 @@ const CurrentStats = () => {
       <div className="current-temperature">
         <div className="current-temperature__icon-container">
           <img
-            src={icon || `${URL}01d@2x.png`}
+            src={icon == undefined ? `${URL}01d@2x.png` : icon}
             className="current-temperature__icon"
             alt={main}
           />
