@@ -12,7 +12,7 @@ function App() {
       <Loader
         promiseTracker={usePromiseTracker}
         color={"#3d5e61"}
-        background={"rgba(70,174,247,.75)"}
+        background={"rgba(70,174,247,.85)"}
       />
       <LocationSearch />
       <CurrentLocation />
