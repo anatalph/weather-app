@@ -1,5 +1,3 @@
-import React from "react";
-
 const DayStats = ({ day }) => {
   const URL = import.meta.env.VITE_ICON_URL;
   const formatDate = (timestamp) => new Date(timestamp * 1000);

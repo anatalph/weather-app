@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { trackPromise } from "react-promise-tracker";
 
 const WeatherContext = React.createContext();

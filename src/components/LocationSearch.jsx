@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { WeatherContext } from "../Context";
 
 const LocationSearch = () => {
-  const { searchCity } = React.useContext(WeatherContext);
+  const { searchCity } = useContext(WeatherContext);
   const [city, setCity] = useState("");
   const disableSearch = city.trim() === "";
 
