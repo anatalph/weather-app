@@ -68,7 +68,7 @@ const WeatherProvider = ({ children }) => {
         const img = new Image();
         img.src = src;
         img.onload = resolve();
-        img.onerror = reject;
+        img.onerror = reject();
       });
     });
 
