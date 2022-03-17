@@ -26,17 +26,17 @@ const DayStats = ({ day }) => {
         </div>
       </div>
       <div className="next-5-days__low">
-        {temp} &deg;C
+        {temp}&deg;C
         <div className="next-5-days__label">Temp</div>
       </div>
 
       <div className="next-5-days__high">
-        {feelsLike} &deg;C
+        {feelsLike}&deg;C
         <div className="next-5-days__label">Feels Like</div>
       </div>
 
       <div className="next-5-days__icon">
-        <img src={icon == undefined ? `${URL}01d@2x.png` : icon} alt={alt} />
+        <img src={icon ?? `${URL}01d@2x.png`} alt={alt} />
       </div>
 
       <div className="next-5-days__rain">

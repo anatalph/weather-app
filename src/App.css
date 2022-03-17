@@ -262,6 +262,8 @@ body {
 .search-form input,
 .search-form input::placeholder {
   color: #fff;
+  text-align: center;
+  width: 100%;
 }
 /* Sidebar Form Input */
 .search-form input {

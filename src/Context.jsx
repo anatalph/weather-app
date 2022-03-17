@@ -99,7 +99,7 @@ const WeatherProvider = ({ children }) => {
     const monthNum = today.getMonth();
 
     if (monthNum === 0) setMonth("Jan.");
-    if (monthNum === 1) setMonth("Mon.");
+    if (monthNum === 1) setMonth("Feb.");
     if (monthNum === 2) setMonth("Mar.");
     if (monthNum === 3) setMonth("Apr.");
     if (monthNum === 4) setMonth("May.");

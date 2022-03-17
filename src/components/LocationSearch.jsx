@@ -19,11 +19,11 @@ const LocationSearch = () => {
         <input
           id="search-input"
           type="text"
-          placeholder="Enter Location.."
+          placeholder=""
           value={city}
           onChange={(e) => setCity(e.target.value)}
         />
-        <button onClick={handleSubmit} disabled={disableSearch}>
+        <button type="submit" disabled={disableSearch}>
           <FontAwesomeIcon icon={faLocationDot} className="search-icon fa-2x" />
         </button>
       </form>
