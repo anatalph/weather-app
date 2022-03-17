@@ -48,11 +48,9 @@ const WeatherProvider = ({ children }) => {
         const data = await Promise.allSettled(
           dates.map(
             async (date) =>
-              await (
-                await fetch(
-                  `${URL}?lat=${lat}&lon=${lon}&units=metric&dt=${date}&appid=${KEY}`
-                )
-              ).json()
+              await fetch(
+                `${URL}?lat=${lat}&lon=${lon}&units=metric&dt=${date}&appid=${KEY}`
+              ).then((response) => response.json())
           )
         );
         setPrevDaysWeather(data);
